@@ -30,7 +30,7 @@ public class VentanaCredito extends JFrame {
         lblContexto.setText("<html>Este árbol predice si un crédito es concedido o no.<br>" +
                 "Los datos que debes ingresar son:<br>" +
                 "- <b>Edad</b>: Tu edad en años. Si es menor a 30, el árbol te considera un perfil joven.<br>" +
-                "- <b>Ingreso</b>: Tus ingresos mensuales en dólares. Si son mayores a 50,000, el árbol lo considera un ingreso alto.<br>" +
+                "- <b>Ingreso</b>: Tus ingresos mensuales en dólares. Si son mayores a 600 USD, el árbol lo considera un ingreso alto.<br>" +
                 "- <b>Antigüedad laboral</b>: Años que llevas trabajando en el mismo lugar. Más de 5 años indica estabilidad.<br>" +
                 "El árbol combina estos datos para decidir si el crédito es aprobado o no.</html>");
 
