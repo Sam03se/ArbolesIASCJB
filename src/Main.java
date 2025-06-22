@@ -1,10 +1,12 @@
+import vista.VentanaMenu;
+
 import javax.swing.SwingUtilities;
 
 public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            VentanaPrincipal ventana = new VentanaPrincipal();
-            ventana.setVisible(true);
+            VentanaMenu menu = new VentanaMenu();
+            menu.setVisible(true);
         });
     }
 }

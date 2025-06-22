@@ -1,6 +1,6 @@
 package vista;
 
-import controlador.ControladorArbolCredito;
+import Controlador.ControladorArbolCredito;
 import modelo.Datos;
 
 import javax.swing.*;
@@ -22,13 +22,17 @@ public class VentanaCredito extends JFrame {
         super("Árbol IA - Concesión de Crédito");
         setContentPane(panelCredito);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(400, 400);
+        setSize(500, 400);
         setLocationRelativeTo(null);
 
         controlador = new ControladorArbolCredito();
 
-        lblContexto.setText("<html>Este árbol predice la concesión de un crédito.<br>" +
-                "Ingrese los datos requeridos y pulse 'Predecir'.</html>");
+        lblContexto.setText("<html>Este árbol predice si un crédito es concedido o no.<br>" +
+                "Los datos que debes ingresar son:<br>" +
+                "- <b>Edad</b>: Tu edad en años. Si es menor a 30, el árbol te considera un perfil joven.<br>" +
+                "- <b>Ingreso</b>: Tus ingresos mensuales en dólares. Si son mayores a 50,000, el árbol lo considera un ingreso alto.<br>" +
+                "- <b>Antigüedad laboral</b>: Años que llevas trabajando en el mismo lugar. Más de 5 años indica estabilidad.<br>" +
+                "El árbol combina estos datos para decidir si el crédito es aprobado o no.</html>");
 
         btnPredecir.addActionListener(new ActionListener() {
             @Override

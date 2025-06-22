@@ -1,6 +1,6 @@
 package vista;
 
-import controlador.ControladorArbolMedico;
+import Controlador.ControladorArbolMedico;
 import modelo.Datos;
 
 import javax.swing.*;
@@ -22,13 +22,17 @@ public class VentanaMedico extends JFrame {
         super("Árbol IA - Diagnóstico Médico");
         setContentPane(panelMedico);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(400, 400);
+        setSize(500, 400);
         setLocationRelativeTo(null);
 
         controlador = new ControladorArbolMedico();
 
         lblContexto.setText("<html>Este árbol predice un diagnóstico médico básico.<br>" +
-                "Ingrese los datos (síntomas y saturación) y pulse 'Predecir'.</html>");
+                "Los datos que debes ingresar son:<br>" +
+                "- <b>Fiebre</b>: Marca la casilla si tienes fiebre.<br>" +
+                "- <b>Tos</b>: Marca la casilla si tienes tos.<br>" +
+                "- <b>Saturación</b>: Porcentaje de oxígeno en sangre. Un valor menor a 90% es una emergencia.<br>" +
+                "El árbol analiza estos síntomas para determinar el nivel de gravedad.</html>");
 
         btnPredecir.addActionListener(new ActionListener() {
             @Override

@@ -10,15 +10,9 @@ public class ControladorArbolCredito {
     }
 
     private void construirArbol() {
-        Nodo aprobadoJoven = new Nodo("Aprobado - perfil joven solvente");
-        Nodo aprobadoMaduro = new Nodo("Aprobado - perfil maduro solvente");
-        Nodo aprobadoAntiguedad = new Nodo("Aprobado - solvente por estabilidad");
-        Nodo rechazado = new Nodo("Rechazado - perfil riesgoso");
-
-        Nodo nodoEdad = new Nodo(new CondicionEdadMenor(30), aprobadoJoven, aprobadoMaduro);
-        Nodo nodoAntiguedad = new Nodo(new CondicionAntiguedadMayor(5), aprobadoAntiguedad, rechazado);
-
-        raiz = new Nodo(new CondicionIngresoMayor(50000), nodoEdad, nodoAntiguedad);
+        Nodo aprobado = new Nodo("Aprobado");
+        Nodo rechazado = new Nodo("Rechazado");
+        raiz = new Nodo(new CondicionIngresoMayor(50000), aprobado, rechazado);
     }
 
     public String procesarPrediccion(Datos datos) {
