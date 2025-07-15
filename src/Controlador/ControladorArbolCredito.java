@@ -18,7 +18,6 @@ public class ControladorArbolCredito {
         Nodo nodoEdad = new Nodo(new CondicionEdadMenor(30), aprobadoJoven, aprobadoMaduro);
         Nodo nodoAntiguedad = new Nodo(new CondicionAntiguedadMayor(5), aprobadoAntiguedad, rechazado);
 
-        // 👑 CAMBIO AQUÍ: umbral de 600
         raiz = new Nodo(new CondicionIngresoMayor(600), nodoEdad, nodoAntiguedad);
     }
 
