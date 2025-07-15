@@ -18,9 +18,7 @@ public class Datos {
 
     // Constructor completo (usado en árboles anteriores)
     public Datos(int edad, double ingreso, int antiguedadLaboral, String ubicacion,
-                 boolean fiebre, boolean tos, int saturacion,
-                 boolean esRedonda, boolean tieneSemillas, boolean esJugosa,
-                 String colorFruta, String formaFruta) {
+                 boolean fiebre, boolean tos, int saturacion, boolean esRedonda, boolean tieneSemillas, boolean esJugosa, String colorFruta, String formaFruta) {
         this.edad = edad;
         this.ingreso = ingreso;
         this.antiguedadLaboral = antiguedadLaboral;

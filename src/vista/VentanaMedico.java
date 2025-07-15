@@ -48,6 +48,7 @@ public class VentanaMedico extends JFrame {
             boolean tos = chkTos.isSelected();
             int saturacion = Integer.parseInt(txtSaturacion.getText());
 
+            // ✅ Constructor con 7 argumentos
             Datos datos = new Datos(0, 0, 0, "", fiebre, tos, saturacion);
 
             String resultado = controlador.procesarPrediccion(datos);
