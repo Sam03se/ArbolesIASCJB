@@ -7,6 +7,7 @@ public class ControladorArbolMedico {
 
     public ControladorArbolMedico() {
         construirArbol();
+
     }
 
     private void construirArbol() {

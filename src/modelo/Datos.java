@@ -16,9 +16,10 @@ public class Datos {
     public String colorFruta;
     public String formaFruta;
 
-    // Constructor completo (usado en árboles anteriores)
+
     public Datos(int edad, double ingreso, int antiguedadLaboral, String ubicacion,
-                 boolean fiebre, boolean tos, int saturacion, boolean esRedonda, boolean tieneSemillas, boolean esJugosa, String colorFruta, String formaFruta) {
+                 boolean fiebre, boolean tos, int saturacion, boolean esRedonda,
+                 boolean tieneSemillas, boolean esJugosa, String colorFruta, String formaFruta) {
         this.edad = edad;
         this.ingreso = ingreso;
         this.antiguedadLaboral = antiguedadLaboral;
@@ -36,5 +37,17 @@ public class Datos {
     public Datos(String colorFruta, String formaFruta) {
         this.colorFruta = colorFruta;
         this.formaFruta = formaFruta;
+    }
+
+
+    public Datos(int edad, double ingreso, int antiguedadLaboral, String ubicacion,
+                 boolean fiebre, boolean tos, int saturacion) {
+        this.edad = edad;
+        this.ingreso = ingreso;
+        this.antiguedadLaboral = antiguedadLaboral;
+        this.ubicacion = ubicacion;
+        this.fiebre = fiebre;
+        this.tos = tos;
+        this.saturacion = saturacion;
     }
 }
