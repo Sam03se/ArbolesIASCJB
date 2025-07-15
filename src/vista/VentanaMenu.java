@@ -10,8 +10,7 @@ public class VentanaMenu extends JFrame {
     private JButton btnCredito;
     private JButton btnMedico;
     private JButton btnInmueble;
-    private JButton caso4FrutasButton;
-    private JButton btnFrutas;  // ✅ Nuevo botón agregado
+    private JButton btnFrutas;
 
     public VentanaMenu() {
         super("Árbol de IA - Menú Principal");
@@ -20,7 +19,7 @@ public class VentanaMenu extends JFrame {
         setSize(400, 300);
         setLocationRelativeTo(null);
 
-        // Botón Crédito
+        // Acción del botón de crédito
         btnCredito.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -29,7 +28,7 @@ public class VentanaMenu extends JFrame {
             }
         });
 
-        // Botón Médico
+        // Acción del botón de diagnóstico médico
         btnMedico.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -38,7 +37,7 @@ public class VentanaMenu extends JFrame {
             }
         });
 
-        // Botón Inmueble
+        // Acción del botón de predicción inmobiliaria
         btnInmueble.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -47,7 +46,6 @@ public class VentanaMenu extends JFrame {
             }
         });
 
-        // ✅ Nuevo botón Frutas
         btnFrutas.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
